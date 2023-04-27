@@ -1,0 +1,50 @@
+# Pattern_programs
+
+# square_pattern
+
+n = int(input("enter the number"))
+for i in range(n):
+    for j in range(n):
+        print("*", end=" ")
+    print(" ")
+
+# hollow_square_pattern
+
+no = int(input("enter the number"))
+for i in range(n):
+    for j in range(n):
+        if i == 0 or i == n-1 or j == 0 or j == n-1:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print(" ")
+
+# right_angled_triangle
+
+n = int(input("enter the number"))
+for i in range(0, n):
+    for j in range(i+1):
+        print("*", end=" ")
+    print(" ")
+
+# inverted_right_angled_triangle
+
+n = int(input("enter the number"))
+i = 0
+for i in range(n, 0, -1):
+    for j in range(i):
+        print("*", end=" ")
+    print()
+
+# hollow_right_angled_triangle
+
+n = int(input("enter the number"))
+for i in range(n):
+    for j in range(i+1):
+        if j == 0 or i == j or i == n-1:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+
+
+
